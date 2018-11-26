@@ -1,16 +1,16 @@
 spirng: 
-	profiles: 
-		active: 
-			- dev
+ profiles: 
+  active: 
+   - dev
 			
 ---
 spring: 
-	profiles: dev
-		appliction:
-			name: microservicecloud-config-jx-dev
+ profiles: dev
+  appliction:
+   name: microservicecloud-config-jx-dev
 
 ---
 spring: 
-	profiles: dev
-		appliction:
-			name: microservicecloud-config-jx-test
+ profiles: dev
+  appliction:
+   name: microservicecloud-config-jx-test
