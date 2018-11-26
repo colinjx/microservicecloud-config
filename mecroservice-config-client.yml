@@ -1,0 +1,17 @@
+spring:
+ profiles:
+  active:
+   - dev
+   
+server:
+ port: 8201
+ 
+spring:
+ profiles: dev
+ appliction:
+  name: microservicecloud-cofig-client
+
+euraka:
+ client:
+  service-url:
+   defaultZone: http//eureka7001.com:7001/eureka/
