@@ -6,11 +6,11 @@ spirng:
 ---
 spring: 
  profiles: dev
-  application: 
-   name: microservicecloud-config-jx-dev
+ application: 
+  name: microservicecloud-config-jx-dev
 
 ---
 spring: 
  profiles: test
-  application: 
-   name: microservicecloud-config-jx-test
+ application: 
+  name: microservicecloud-config-jx-test
