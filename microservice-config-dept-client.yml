@@ -1,0 +1,36 @@
+spring:
+ profiles:
+  active:
+   - dev
+---
+spring:
+ profiles: dev
+ application:
+   name: microservicecloud-dept
+ datasource:
+   type: com.alibaba.druid.pool.DruidDataSource
+   url: jdbc:mysql://localhost:3306/clouddb01
+   username: root
+   password: root
+ jpa:
+   show-sql: true
+server:
+  port: 8001
+
+#    开启二级缓存
+mybatis:
+  configuration:
+    cache-enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: microservicecloud-dept8001
+    prefer-ip-address: true
+info:
+  app.name: microservicecloud
+  company.name: www.jx.cn
+  build.aritfactId: $project.artifactId$
+  build.version: $project.version$
+
